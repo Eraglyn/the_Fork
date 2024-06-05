@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap'); /* Police de titre */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');          /* Police de texte */
+
+/* Général */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f7f7;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Dosis', sans-serif;
+}
+img{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+a, h1{
+    color: #25ad9b;
+    text-decoration: none;
+}
+.titre h1{
+    font-size: xx-large;
+}
+
+/* Nav barre */
+nav{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: #dddddd;
+    box-shadow: 0px 0px 10px #000;
+    color: #25ad9b;
+    font-family:'Dosis', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav a{
+    margin: 12px;
+    color: #25ad9b;
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 12px 12px;
+}
+nav img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+nav h1{
+    display: inline-block;
+    margin: 12px;
+    text-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.5);
+}
+nav ul li{
+    display: inline-block;
+    background-color: #dddddd;
+}
+/* Footer */
+footer{
+    background:#ccc;
+    height: 80px;
+    margin-top: 12px;
+    display:flex;
+    flex-direction: column;
+    bottom:0;
+    background: #444;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 12px;
+    overflow: hidden;
+}
+
+.footer .footer-lien{
+    color:  #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.footer .footer-lien a{
+    display:inline-flex;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer .footer-nom{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-icons{
+    margin-top: 20px;
+}
+
+.footer .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color:  #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+/* Style pour le site */
+
+.banner img { /* Bannière */
+    display: inline-flex;
+    margin-bottom: 24px;
+}
+header { /* Barre de recherche */
+    display: flex;
+    text-align: center;
+    margin: 0;
+}
+#recherche{
+    display: inline-flex;
+    width: auto;
+    margin:0;
+}
+.main{ /* Partie principale de toutes les pages */
+    margin-top: 100px;
+    margin-bottom: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{ /* Infos dans les card */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container h4{
+    justify-content: center;
+    margin-top: 0;
+}
+
+
+.Liste{ /* Affichage des card */
+    display: flex;
+    justify-content: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 12px;
+    padding: 12px 24px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 200px;
+    min-height: 350px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.card h4{
+    color: #000;
+    display: flex;
+    margin-bottom: 12px;
+    
+}
+.card h1{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.card img{
+    width: 200px;
+    height: 125px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+.card .left, .card .right{
+    margin-left: 12px;
+    margin-right: 12px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ajoutRestau{
+    height: 423.33px;
+}
+#info{
+    align-items: center;
+}
+#restau{
+    flex-direction: row;
+    width: auto;
+}
+#restau img{
+    width: 700px;
+    height: 500px;
+}
+
+/* Formulaire */
+#cardForm{
+    width: auto;
+    min-height: auto;
+}
+#cardForm form{
+    display: flex;
+    flex-direction: column;
+}
+#cardForm input, #cardForm label{
+    margin-top: 12px;
+}
+#cardForm textarea{
+    font-family: inherit;
+    height: 175px;
+    width: 350px;
+    margin: 24px;
+}
+#cardForm button{
+    width: 350px;
+}
+form button{
+    display: flex;
+    cursor: pointer;
+    background-color: #25ad9b;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    padding: 12px;
+    width: 100%;
+    justify-content: center;
+}
+#AjoutRestauButton{
+    margin-top: 12px;
+}
+#barre{
+    flex-direction: row;
+}
+#barre input{
+    margin: 0;
+}
+#bot{
+    margin-top: auto;
+}
+#ban{
+    background-color: red;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input[type="text"], input[type='tel'], input[type='password'], input[type='email']{
+    margin-bottom: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: inline-flex;
+    width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
